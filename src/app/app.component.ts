@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'payweb-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'payweb-app',
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'payweb';
+export class AppComponent implements OnInit {
+
+  content = 'Bem-vindo ao Payfast!'
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }
